@@ -1,6 +1,11 @@
-*
+*/
+/*
 !.gitignore
 
-!defaultconfigs/
-!config/
-!kubejs/
+!/defaultconfigs/
+!/defaultconfigs/*
+!/config/
+!/config/*
+!/kubejs/
+!/kubejs/*
+/kubejs/exported/

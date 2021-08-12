@@ -1,0 +1,115 @@
+
+# 
+[worldGen]
+	# 
+	#Whether or not CreateAutomated config is enabled
+	enabled = true
+
+	[worldGen.copper_node]
+		# 
+		#Range: > 0
+		clusterSize = 16
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 2.0
+		# 
+		#Range: > 0
+		minHeight = 40
+		# 
+		#Range: > 0
+		maxHeight = 256
+
+	[worldGen.iron_node]
+		# 
+		#Range: > 0
+		clusterSize = 4
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 1.0
+		# 
+		#Range: > 0
+		minHeight = 40
+		# 
+		#Range: > 0
+		maxHeight = 256
+
+	[worldGen.lapis_node]
+		# 
+		#Range: > 0
+		clusterSize = 10
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 4.0
+		# 
+		#Range: > 0
+		minHeight = 40
+		# 
+		#Range: > 0
+		maxHeight = 256
+
+	[worldGen.zinc_node]
+		# 
+		#Range: > 0
+		clusterSize = 9
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 2.0
+		# 
+		#Range: > 0
+		minHeight = 40
+		# 
+		#Range: > 0
+		maxHeight = 256
+
+	[worldGen.gold_node]
+		# 
+		#Range: > 0
+		clusterSize = 6
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 1.0
+		# 
+		#Range: > 0
+		minHeight = 40
+		# 
+		#Range: > 0
+		maxHeight = 256
+
+	[worldGen.cinder_flour_node]
+		# 
+		#Range: > 0
+		clusterSize = 16
+		# 
+		#Amount of clusters generated per Chunk.
+		#  >1 to spawn multiple.
+		#  <1 to make it a chance.
+		#  0 to disable.
+		#Range: 0.0 ~ 512.0
+		frequency = 10.0
+		# 
+		#Range: > 0
+		minHeight = 0
+		# 
+		#Range: > 0
+		maxHeight = 256
+
