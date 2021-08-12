@@ -1,8 +1,11 @@
-*/
-/*
+**
 !.gitignore
 
 !/defaultconfigs**
 !/config**
 !/kubejs**
 /kubejs/exported/
+
+// ????
+config_new_temp.json
+config.json
