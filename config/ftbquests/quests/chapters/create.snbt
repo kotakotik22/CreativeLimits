@@ -1,0 +1,52 @@
+{
+	id: "79DBDD4FA258D2A0"
+	group: ""
+	order_index: 0
+	filename: "create"
+	title: "Create"
+	icon: "create:wrench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.0d
+			y: 1.5d
+			dependency_requirement: "one_started"
+			id: "48D2B57A2A1D071B"
+			tasks: [{
+				id: "1288CE2ADACB732A"
+				type: "item"
+				item: "creategears:gear"
+			}]
+			rewards: [{
+				id: "01C750E16F3C8AF6"
+				type: "item"
+				title: ":teadrinking:"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Give it a whirl!"
+			icon: "create:shaft"
+			x: 4.0d
+			y: 1.5d
+			shape: "gear"
+			description: ["Rotate a gear by right-clicking it"]
+			dependencies: ["48D2B57A2A1D071B"]
+			dependency_requirement: "one_completed"
+			id: "2A7D482145E6BE2F"
+			tasks: [{
+				id: "7FA5A5E7B13CCABE"
+				type: "custom"
+				title: "Power!"
+				icon: "creategears:gear"
+			}]
+			rewards: [{
+				id: "79E77C4BB017BE18"
+				type: "item"
+				title: "You did it! You right clicked a gear! Have a cookie!!!"
+				item: "minecraft:cookie"
+			}]
+		}
+	]
+}

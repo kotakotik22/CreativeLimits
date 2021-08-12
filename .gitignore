@@ -2,10 +2,7 @@
 /*
 !.gitignore
 
-!/defaultconfigs/
-!/defaultconfigs/*
-!/config/
-!/config/*
-!/kubejs/
-!/kubejs/*
+!/defaultconfigs**
+!/config**
+!/kubejs**
 /kubejs/exported/
