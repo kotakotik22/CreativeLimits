@@ -51,7 +51,7 @@
 		}
 		{
 			x: 3.5d
-			y: 0.5d
+			y: 0.0d
 			id: "2E7042FE83F24347"
 			tasks: [{
 				id: "62706EA8BBEE6CE2"
@@ -84,6 +84,7 @@
 		{
 			x: 5.5d
 			y: -1.0d
+			description: ["Did you know originally copper casing needed copper sheets? Not anymore!"]
 			dependencies: ["2E7042FE83F24347"]
 			id: "5C3A4B9CAF552560"
 			tasks: [{
@@ -132,6 +133,292 @@
 				id: "4DF4438EA6DF9ACE"
 				type: "item"
 				item: "kubejs:andesite_mix"
+			}]
+			rewards: [{
+				id: "73D97EB19EF4B326"
+				type: "item"
+				title: "Yes, another cookie"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			title: "I hate this thing"
+			x: 9.0d
+			y: 4.0d
+			id: "6D23B38457C1D3AB"
+			tasks: [{
+				id: "6D03F85EA1CD8311"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "03DE64AD6D148E50"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 16
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.5d
+			description: ["Finally..."]
+			dependencies: ["2FDD41372A7AD5C7"]
+			id: "539F8ABE7A163A7F"
+			tasks: [{
+				id: "22473B0344F4D316"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "413812DF69DE6659"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.5d
+			description: ["Why is this easier to get than andesite?"]
+			dependencies: [
+				"6D23B38457C1D3AB"
+				"539F8ABE7A163A7F"
+			]
+			id: "2DDDBDE0DA624806"
+			tasks: [{
+				id: "0B9D46D841540A16"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+			rewards: [{
+				id: "311308369F130C28"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8
+			}]
+		}
+		{
+			title: "Real rough floss"
+			x: 13.0d
+			y: -2.5d
+			id: "6B98E4833F937675"
+			tasks: [{
+				id: "657ECB1A21730980"
+				type: "item"
+				item: {
+					id: "createautomated:picker"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "536304A2FD1A68B7"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "minecraft:mending"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Real rough paper"
+			x: 15.0d
+			y: -2.5d
+			dependencies: ["6B98E4833F937675"]
+			id: "6091FD96CA27C6EA"
+			tasks: [{
+				id: "6E73D852E3EF095B"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0E489C61784C3B79"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 8
+			}]
+		}
+		{
+			title: "Real smooth quartz"
+			x: 15.0d
+			y: -0.5d
+			dependencies: ["6091FD96CA27C6EA"]
+			id: "4E2D7CDA0AB6EBBC"
+			tasks: [{
+				id: "00695501EDA1FB96"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.5d
+			dependencies: [
+				"4E2D7CDA0AB6EBBC"
+				"2DDDBDE0DA624806"
+			]
+			id: "59DA73652CFC8C33"
+			tasks: [{
+				id: "150D40A56A0A8693"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 21L
+			}]
+			rewards: [{
+				id: "543CD1C4136A4EC9"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			title: "Yes, you need half a flywheel to power on of these"
+			x: 17.0d
+			y: 4.0d
+			dependencies: ["59DA73652CFC8C33"]
+			id: "77CBB07083556474"
+			tasks: [{
+				id: "4C043E9DF56D2204"
+				type: "item"
+				item: {
+					id: "createautomated:ore_extractor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "26BA99D473ACEF66"
+				type: "item"
+				item: "createautomated:drill_head"
+			}]
+		}
+		{
+			title: "Yeah I'm not sure why I put this here"
+			x: 17.0d
+			y: 1.5d
+			dependencies: ["59DA73652CFC8C33"]
+			id: "1D65CA1FB780BEE2"
+			tasks: [{
+				id: "5CB4591371321F1E"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+		{
+			title: "The original"
+			x: 15.0d
+			y: 5.5d
+			dependencies: ["77CBB07083556474"]
+			id: "1FF77C9B904C994C"
+			tasks: [{
+				id: "75B91480135A9CE2"
+				type: "item"
+				item: "createautomated:lapis_ore_piece"
+			}]
+			rewards: [{
+				id: "036BCD640A1A4EA8"
+				type: "item"
+				item: "minecraft:slime_ball"
+				count: 8
+			}]
+		}
+		{
+			title: "Just make a gravel farm, dude"
+			x: 19.5d
+			y: 5.5d
+			dependencies: ["77CBB07083556474"]
+			id: "5FFFCEF89EA384FB"
+			tasks: [{
+				id: "42203D499DD3B253"
+				type: "item"
+				item: "createautomated:iron_ore_piece"
+			}]
+			rewards: [{
+				id: "268A9FDAC349301F"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "Who even cares about zinc"
+			x: 19.5d
+			y: 7.0d
+			dependencies: ["77CBB07083556474"]
+			id: "17A670C523195591"
+			tasks: [{
+				id: "03C60B8FF2DD4491"
+				type: "item"
+				item: "createautomated:zinc_ore_piece"
+			}]
+			rewards: [{
+				id: "6BFD7D5325C1724D"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "It exists, I guess?"
+			x: 18.0d
+			y: 7.0d
+			dependencies: ["77CBB07083556474"]
+			id: "1FD52B62251803C0"
+			tasks: [{
+				id: "5303BFF055AC8BCE"
+				type: "item"
+				item: "createautomated:gold_ore_piece"
+			}]
+			rewards: [{
+				id: "02074A9C0361F0B5"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "Because everyone wants to automate this extremely rare resource"
+			x: 16.5d
+			y: 7.0d
+			dependencies: ["77CBB07083556474"]
+			id: "0AEBB595291F28F9"
+			tasks: [{
+				id: "633D7738F978F881"
+				type: "item"
+				item: "createautomated:copper_ore_piece"
+			}]
+			rewards: [{
+				id: "256D15D0CEA52CA1"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "Infinite lava, I guess"
+			x: 15.0d
+			y: 7.0d
+			dependencies: ["77CBB07083556474"]
+			id: "75C202A208D417ED"
+			tasks: [{
+				id: "195A63212F119240"
+				type: "item"
+				item: "createautomated:cinder_flour_ore_piece"
+			}]
+			rewards: [{
+				id: "35BE76F5B7B84EC9"
+				type: "item"
+				item: "minecraft:water_bucket"
 			}]
 		}
 	]
