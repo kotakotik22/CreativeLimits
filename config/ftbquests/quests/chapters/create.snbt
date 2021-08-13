@@ -3,8 +3,8 @@
 	group: ""
 	order_index: 0
 	filename: "create"
-	title: "Create"
-	icon: "create:wrench"
+	title: "Wooden Age"
+	icon: "creategears:gear"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -33,7 +33,7 @@
 			shape: "gear"
 			description: ["Rotate a gear by right-clicking it"]
 			dependencies: ["48D2B57A2A1D071B"]
-			dependency_requirement: "one_completed"
+			dependency_requirement: "one_started"
 			id: "2A7D482145E6BE2F"
 			tasks: [{
 				id: "7FA5A5E7B13CCABE"
