@@ -285,7 +285,7 @@
 			}]
 		}
 		{
-			title: "Yes, you need half a flywheel to power on of these"
+			title: "Yes, you need half a flywheel to power one of these"
 			x: 17.0d
 			y: 4.0d
 			dependencies: ["59DA73652CFC8C33"]
@@ -419,6 +419,48 @@
 				id: "35BE76F5B7B84EC9"
 				type: "item"
 				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "HE ADDED A TEA NODE TO THIS MODPACK??"
+			icon: "kubejs:tea_node"
+			x: 19.5d
+			y: 1.5d
+			dependency_requirement: "one_started"
+			id: "0F7E94308C23A9EA"
+			tasks: [{
+				id: "5E2A7BDB098B1F7F"
+				type: "observation"
+				title: "Find tea node"
+				icon: "kubejs:tea_node"
+				timer: 0L
+				observe: "block:kubejs:tea_node"
+			}]
+			rewards: [{
+				id: "69BFEC7583BB8556"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "ULTIMATE POWER"
+			x: 19.5d
+			y: 3.5d
+			dependencies: [
+				"0F7E94308C23A9EA"
+				"77CBB07083556474"
+			]
+			id: "6A1A4546D66003BE"
+			tasks: [{
+				id: "4AD3C6C6C1AAA343"
+				type: "item"
+				item: "kubejs:tea_bit"
+			}]
+			rewards: [{
+				id: "2D21BCFC75AD4E19"
+				type: "item"
+				item: "create:builders_tea"
+				random_bonus: 7
 			}]
 		}
 	]

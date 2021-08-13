@@ -36,4 +36,17 @@ onEvent("recipes", event => {
           S: "create:shaft",
           B: "create:brass_ingot"
       })
+
+    event.recipes.createautomated.extracting("kubejs:tea_node", "kubejs:tea_bit")
+      .drillDamage(20)
+      .ore(1)
+      .requiredProgressSeconds(128, 30) 
+    
+    event.shaped("create:builders_tea", [
+        "BBB",
+        "BBB",
+        "BBB"
+    ], {
+        B: "kubejs:tea_bit"
+    })
 })
