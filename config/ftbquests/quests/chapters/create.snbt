@@ -3,14 +3,15 @@
 	group: ""
 	order_index: 0
 	filename: "create"
-	title: "Wooden Age"
+	title: "Create"
 	icon: "creategears:gear"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 2.0d
-			y: 1.5d
+			title: "The totally not cursed cogwheel"
+			x: 3.5d
+			y: 2.5d
 			dependency_requirement: "one_started"
 			id: "48D2B57A2A1D071B"
 			tasks: [{
@@ -27,9 +28,9 @@
 		}
 		{
 			title: "Give it a whirl!"
-			icon: "create:shaft"
-			x: 4.0d
-			y: 1.5d
+			icon: "creategears:gear"
+			x: 5.5d
+			y: 4.0d
 			shape: "gear"
 			description: ["Rotate a gear by right-clicking it"]
 			dependencies: ["48D2B57A2A1D071B"]
@@ -46,6 +47,91 @@
 				type: "item"
 				title: "You did it! You right clicked a gear! Have a cookie!!!"
 				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			id: "2E7042FE83F24347"
+			tasks: [{
+				id: "62706EA8BBEE6CE2"
+				type: "item"
+				item: "create:copper_ingot"
+			}]
+		}
+		{
+			title: "The worst part of fluid logistics"
+			x: 5.5d
+			y: 1.5d
+			description: ["Crafted using a gear and a pump"]
+			dependencies: [
+				"2E7042FE83F24347"
+				"48D2B57A2A1D071B"
+			]
+			id: "719CA7767232DEC8"
+			tasks: [{
+				id: "0607F88C5C05EAAC"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+			rewards: [{
+				id: "326548C23D7B1AAD"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 8
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["2E7042FE83F24347"]
+			id: "5C3A4B9CAF552560"
+			tasks: [{
+				id: "1C9DB7974339DFEB"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "77FBB92669810657"
+				type: "item"
+				title: "I didn't know how to reward you so have this"
+				item: "create:depot"
+			}]
+		}
+		{
+			title: "The rarest material in Minecraft"
+			x: 7.5d
+			y: 1.5d
+			shape: "diamond"
+			description: ["Create andesite alloy by spinning a gear connected to a pump pouring lava over andesite mix with a spout "]
+			dependencies: [
+				"719CA7767232DEC8"
+				"5C3A4B9CAF552560"
+				"2A7D482145E6BE2F"
+				"494C4CE9DC41DD85"
+			]
+			id: "2FDD41372A7AD5C7"
+			tasks: [{
+				id: "6987F29F2916A557"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "46E51DE4B4FC88A7"
+				type: "item"
+				title: "After all this hard work you deserve some of these"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			id: "494C4CE9DC41DD85"
+			tasks: [{
+				id: "4DF4438EA6DF9ACE"
+				type: "item"
+				item: "kubejs:andesite_mix"
 			}]
 		}
 	]
